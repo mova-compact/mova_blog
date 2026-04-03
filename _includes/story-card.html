@@ -1,0 +1,7 @@
+<article class="story-card">
+  <h3><a href="{{ include.chapter.url }}">{{ include.chapter.title }}</a></h3>
+  {% if include.chapter.chapter_id %}
+    <p class="chapter-id">Chapter {{ include.chapter.chapter_id }}</p>
+  {% endif %}
+  <p>{{ include.chapter.summary }}</p>
+</article>

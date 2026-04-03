@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="story-chapter">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.chapter_id %}
+      <p class="chapter-id">Chapter {{ page.chapter_id }}</p>
+    {% endif %}
+  </header>
+  <div class="content">
+    {{ content }}
+  </div>
+</article>

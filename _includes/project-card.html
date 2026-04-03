@@ -1,0 +1,7 @@
+<article class="project-card">
+  <h3><a href="{{ include.project.url }}">{{ include.project.title }}</a></h3>
+  <p>{{ include.project.summary }}</p>
+  {% if include.project.project_type %}
+    <span class="project-type">{{ include.project.project_type }}</span>
+  {% endif %}
+</article>

@@ -1,0 +1,70 @@
+# Site settings
+title: "Your Name - Publishing Hub"
+description: "Personal publishing hub for projects, articles, and stories"
+url: "https://yourusername.github.io"
+baseurl: ""
+author: "Your Name"
+email: "your.email@example.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  story:
+    output: true
+    permalink: /story/:name/
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      status: published
+      featured: false
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+      status: published
+      featured: false
+  - scope:
+      path: ""
+      type: "story"
+    values:
+      layout: story_chapter
+      status: published
+      featured: false
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+  - jekyll_tz_mova_hub.md
+
+# Include files
+include:
+  - _pages
