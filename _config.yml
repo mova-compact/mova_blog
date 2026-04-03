@@ -1,10 +1,10 @@
 # Site settings
-title: "Your Name - Publishing Hub"
-description: "Personal publishing hub for projects, articles, and stories"
-url: "https://yourusername.github.io"
-baseurl: ""
-author: "Your Name"
-email: "your.email@example.com"
+title: "MOVA Publishing Hub"
+description: "Personal publishing hub for MOVA projects, articles, and stories"
+url: "https://mova-compact.github.io"
+baseurl: "/mova_blog"
+author: "MOVA Team"
+email: "contact@mova-compact.github.io"
 
 # Build settings
 markdown: kramdown
